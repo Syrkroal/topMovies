@@ -1,0 +1,97 @@
+.movie-detail-container-center {
+    background-color: #282c34;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.movie-detail-container {
+    background-color: #282c34;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.movie-detail-info-container {
+    margin: 20px;
+    /* width: 100%; */
+    /* height: 100%; */
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.movie-detail-info {
+    width: 50%;
+    min-width: 300px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-detail-header {
+    /* font-weight: bold; */
+    flex-flow: column wrap;
+    color: white;
+}
+
+.movie-detail-img {
+    height: 500px;
+    border-radius: 10px;
+}
+
+.movie-detail-title {
+    font-size: 40px;
+    margin: 20px 0 20px 0;
+}
+
+.movie-date-genres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.movie-detail-actors {
+    margin: 0 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.actors-title {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.actors-container {
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.buy-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+    height: 50px;
+    width: 200px;
+    background-color: #141414;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
