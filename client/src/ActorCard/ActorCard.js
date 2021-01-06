@@ -1,10 +1,8 @@
 import "./ActorCard.css";
-import { useHistory } from "react-router-dom";
 
 const imgPath = "https://image.tmdb.org/t/p/w500/";
 
 function ActorCard(props) {
-    let history = useHistory();
     const actor = props.actor;
 
     return (

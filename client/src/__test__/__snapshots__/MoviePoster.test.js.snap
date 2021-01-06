@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoviePoster to match snapshot should match the snapshot 1`] = `"<div class=\\"movie-container\\"><img class=\\"movieImg\\" src=\\"https://image.tmdb.org/t/p/w500/path\\" alt=\\"Poster\\"/><div class=\\"movie-title\\">title</div></div>"`;

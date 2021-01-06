@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home to match snapshot should match the snapshot 1`] = `"<div class=\\"App\\"><div class=\\"App-container\\"></div></div>"`;

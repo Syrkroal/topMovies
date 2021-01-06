@@ -16,7 +16,10 @@ function Home() {
         const response = await axios.get(
             "http://localhost:4000/movies/popular"
         );
+        if (response.data.error) return false;
         setMovies(response.data.movies);
+
+        return true;
     }
 
     return (

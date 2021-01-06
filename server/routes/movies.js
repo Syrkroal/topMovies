@@ -16,7 +16,7 @@ router.get("/toprated", async (_, res) => {
     const response = await axios.get(url);
 
     if (response.data.success == false) {
-        res.json({ message: response.status_message });
+        res.json({ message: response.status_message, error: true });
     }
 
     res.json({ movies: response.data.results });
@@ -32,7 +32,7 @@ router.get("/popular", async (_, res) => {
     const response = await axios.get(url);
 
     if (response.data.success == false) {
-        res.json({ message: response.status_message });
+        res.json({ message: response.status_message, error: true });
     }
 
     res.json({ movies: response.data.results });
@@ -50,7 +50,7 @@ router.get("/info/:id", async (req, res) => {
 
     console.log(response.data);
     if (response.data.success == false) {
-        res.json({ message: response.status_message });
+        res.json({ message: response.status_message, error: true });
     }
 
     res.json({ infos: response.data });
@@ -68,7 +68,7 @@ router.get("/cast/:id", async (req, res) => {
 
     console.log(response.data);
     if (response.data.success == false) {
-        res.json({ message: response.status_message });
+        res.json({ message: response.status_message, error: true });
     }
 
     res.json({ cast: response.data.cast });

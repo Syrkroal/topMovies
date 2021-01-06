@@ -8,7 +8,6 @@ function MoviePoster(props) {
     const movie = props.movie;
 
     function gotoDetails() {
-        console.log("gotoDetails");
         history.push("/details", { movie: movie });
     }
 

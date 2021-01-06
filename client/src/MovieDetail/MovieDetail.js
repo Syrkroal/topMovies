@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
 
-import "./App.css";
+import "../App.css";
 import "./MovieDetail.css";
-import ActorCard from "./ActorCard/ActorCard";
+import ActorCard from "../ActorCard/ActorCard";
 
 const imgPath = "https://image.tmdb.org/t/p/w500/";
 
@@ -25,20 +25,27 @@ function MovieDetail() {
         const response = await axios.get(
             "http://localhost:4000/movies/info/" + movie.id
         );
+        if (response.data.error) return false;
+
         setDetail(response.data.infos);
         let tmp = "";
         for (let i = 0; i < response.data.infos.genres.length; i++) {
             tmp += response.data.infos.genres[i].name + ", ";
         }
         setGenres(tmp.slice(0, -2));
+
+        return true;
     }
 
     async function getMovieActors() {
         const response = await axios.get(
             "http://localhost:4000/movies/cast/" + movie.id
         );
+        if (response.data.error) return false;
         setActors(response.data.cast);
         console.log(response.data.cast.length);
+
+        return true;
     }
 
     function buyTicket() {
