@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import MoviePoster from "./MoviePoster/MoviePoster";
 import axios from "axios";
+import { url } from "./API/API";
 
 import "./App.css";
 
@@ -13,9 +14,7 @@ function Home() {
 
     async function getTopMovies() {
         console.log("fetching movies");
-        const response = await axios.get(
-            "http://localhost:4000/movies/popular"
-        );
+        const response = await axios.get(url + "/movies/popular");
         if (response.data.error) return false;
         setMovies(response.data.movies);
 
