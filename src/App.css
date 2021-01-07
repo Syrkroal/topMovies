@@ -12,9 +12,7 @@
 }
 
 .App-container {
-    /* min-height: 100vh; */
     width: 80%;
-    /* border: 2px solid black; */
     display: flex;
     flex-flow: row wrap;
     color: white;
